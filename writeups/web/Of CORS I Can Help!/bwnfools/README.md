@@ -18,4 +18,7 @@ I reached the flag by using the following in the url `/..\/FLAG`
 
 The service then returned : `{"flag":"EPT{CORS_t0tally_trU5t5_y0u}"}`
 
+![Service shows the flag](image2.jpg)
+
+
 Flag: `EPT{CORS_t0tally_trU5t5_y0u}`
