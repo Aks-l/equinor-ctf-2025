@@ -1,10 +1,18 @@
 # EPTBOY
 ![](task.png)
+
+
 The challenge handout is the files for a gameboy game. Running `build.sh` makes the rom files, and the game can be loaded into an emulator.
 Playing and completing the game is easy on the emulator, abusing frequent save states. The flag simply appears whenever the game is won, however the flag in the handout is a placeholder, and the real flag must be obtained on the onsite gameboys without save states, making it harder.
+
+
 ![](gameplay.png) 
+
 There must be some cheese in here, maybe a wrong warp or early trigger of the win screen. After searching for plausible keywords in the code, there is an obvoius clue, the `cheatcounter` variable.
+
 ![](grep.png)
+
+
 The cheatcounter is being handled mostly by the `script_input_x.s` files. Each of these files are being called by an input from the hardware, as seen in `scene_title_screen_init.s`'s blocks that look like this:
 ```
         ; Input Script Attach
@@ -45,6 +53,8 @@ then START
 
 After approximatley 30 seconds of not doing anything, the win screen with the flag appears
 
+
 ![alt text](flag.png) 
+
 
 Flag: `EPT{EPT_BOY_MASTER}`
