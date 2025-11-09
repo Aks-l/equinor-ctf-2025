@@ -1,4 +1,8 @@
 
+# Writeup: Agents
+## Team: bwnfools
+**Author:** sparekonto
+
 ## Process
 
 It's possible to solve the challenge by prompting sales agent and coordinator to reveal the secret flag.
